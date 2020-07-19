@@ -1,0 +1,25 @@
+<%- include("includes/header") %>
+
+    <div class="description">
+        <h1>Suggestions</h1>
+        <p>If you know about any other important resources that we haven't talked about in this website please feel free to share with us in the form below. We appreciate your help.</p>
+    </div>
+            
+    <form class="form-group" id="contactform" action="" method="POST">
+        <h2>Please Tell Us</h2>
+        <div class="field">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" placeholder="Your Name">    
+        </div>
+        <div class="field">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="Your email">
+        </div>
+        <div class="field">
+            <label for="suggestion">Suggestion</label><br>
+            <textarea name="suggestion" id="suggestion" cols="50" rows="8" placeholder="Write your suggestion here"></textarea>
+        </div>
+        <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+<%- include("includes/footer") %>
