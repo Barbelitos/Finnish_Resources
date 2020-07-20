@@ -2,8 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
-const nodemailer = require('nodemailer')
+const bodyParser = require('body-parser');
 
 //Require Routes
 const allRoutes = require('./routes/routes');

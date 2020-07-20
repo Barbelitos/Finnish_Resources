@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
-// const { response } = require('express');
 
 const GMAIL_USER = process.env.GMAIL_USER
 const GMAIL_PASS = process.env.GMAIL_PASS
