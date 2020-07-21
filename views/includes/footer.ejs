@@ -1,7 +1,9 @@
         </main>
         <footer class="page-footer font-small">
             <div class="footer-copyright text-center py-3">
-                <p>© 2020 Copyright: Finnish Resources</p>
+                <h6>© 2020 Copyright: Finnish Resources</h6>
+                <h6>Disclaimer</h6>
+                <p>This website contains external links to other websites. We do not take responsibility for any content displayed on these websites.</p>
             </div>
         </footer>
 
@@ -21,6 +23,10 @@
 
             $( ".navbar-toggler" ).click(function() {
                 $( ".header-content" ).fadeToggle();
+            });
+
+            $('.clickme').on('click',function(){
+                $(this).next('.wrapper').slideToggle();
             });
         </script>
     </body>

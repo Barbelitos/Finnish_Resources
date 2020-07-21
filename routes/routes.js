@@ -61,7 +61,7 @@ router.post('/contact', (req, res) => {
     })
 })
 
-//ERROR ROUTE
+//ERROR CATCH ALL ROUTE
 router.use((req, res, next) => {
     res.status(404).render('404', {title: 'Page Not Found',
                                     page: '404'});

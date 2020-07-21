@@ -19,7 +19,6 @@ This small website was created to help foreigners coming to Finland, joining all
 - [Nodemailer](https://nodemailer.com) sends email from the contact form
 - [Body-parser](https://www.npmjs.com/package/body-parser) Parse incoming request bodies
 - [ejs](https://ejs.co/) - Embedded JavaScript templating
-
 - [Nodemon](https://www.npmjs.com/package/nodemon) for restarting server automatically
 
 

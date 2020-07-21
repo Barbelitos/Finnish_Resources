@@ -1,15 +1,29 @@
 <%- include("includes/header") %>
 
     <div class="description">
-        <h1>Suggestions</h1>
+        <h1 class="maintitle">Suggestions</h1>
         <p>If you know about any other important resources that we haven't talked about in this website please feel free to share with us in the form below. We appreciate your help.</p>
     </div>
-            
+
+    <div class="clickme">
+        <p>About us <i class="fas fa-caret-down"></i></p>
+    </div>
+    <div class="wrapper">
+        <div class="about_container">
+            <div class="about_image">
+                <img src="/images/boat.jpg" alt="">
+            </div>
+            <div class="about_text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt deleniti atque expedita impedit. Eum qui libero beatae reiciendis, autem consequatur quisquam error minus distinctio harum rerum aliquam praesentium! Blanditiis, in?</p>
+            </div>
+        </div>
+    </div>
+
     <form action="/contact" class="form-group" id="contactform" method="POST">
         <h2>Please Tell Us</h2>
         <div class="field">
             <label for="name">Name</label><br>
-            <input type="text" name="name" placeholder="Your Name">    
+            <input type="text" name="name" placeholder="Your Name">
         </div>
         <div class="field">
             <label for="email">Email</label><br>
@@ -21,5 +35,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    
+
 <%- include("includes/footer") %>
