@@ -1,9 +1,9 @@
         </main>
         <footer class="page-footer font-small">
             <div class="footer-copyright text-center py-3">
-                <h6>© 2020 Copyright: Finnish Resources</h6>
+                <h6>© 2020 Easy Finland</h6>
                 <h6>Disclaimer</h6>
-                <p>This website contains external links to other websites. We do not take responsibility for any content displayed on these websites.</p>
+                <p>This website contains external links. Please note that we do not take responsibility for any content displayed on these websites.</p>
             </div>
         </footer>
 
@@ -26,8 +26,11 @@
             });
 
             $('.clickme').on('click',function(){
-                $(this).next('.wrapper').slideToggle();
+                $('.wrapper').slideToggle();
+                $('i').toggleClass('rotated');
             });
+
+
         </script>
     </body>
 </html>

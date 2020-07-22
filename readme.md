@@ -9,7 +9,7 @@ This small website was created to help foreigners coming to Finland, joining all
 
 ## Run
 
-`npm run` on port 3000
+`npm start` on port 3000
 
 ## Dependencies
 
