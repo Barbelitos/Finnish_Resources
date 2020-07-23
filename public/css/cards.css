@@ -1,0 +1,337 @@
+/*INDEX MENU*/
+.menu_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    row-gap: 30px;
+    margin:  100px auto;
+    width: 75%;
+    padding: 0;
+}
+
+.menu_card {
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    height: 190px;
+    width: 100%;
+    box-shadow: 10px 10px 20px rgb(141, 128, 128);
+}
+
+.menu_card_image {
+    height: 100%;
+    width: 30%;
+    border-radius: 8px 0 0 8px;
+}
+
+.menu_card_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.menu_card_content {
+    border: none;
+    width: 70%;
+    height: 100%;
+}
+
+.menu_card_title {
+    border: none;
+    width:100%;
+    height: 20%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    color: white;
+    margin: 0;
+    padding: 0.2rem 0.1rem 0.1rem 0.5rem;
+    border-radius: 0 8px 0 0;
+}
+
+.menu_card_text {
+    width: 100%;
+    height: 60%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.1rem;
+    margin: 0;
+    padding: 0.8rem;
+}
+
+.menu_card_button {
+    width: 4rem;
+    height: 16%;
+    margin-left: .9rem;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    border-radius: 8px;
+    border: none;
+    transition: 0.4s;
+    padding: 0;
+}
+
+.menu_card_button a {
+    font-size: .8rem;
+    padding: .8rem;
+    color: white;
+}
+
+.menu_card_button:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_card_button:hover {
+    transform: scale(1.1);
+}
+
+/*PAGES CARDS*/
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2%;
+    row-gap: 30px;
+    margin: 30px auto 70px auto;
+    width: 75%;
+    text-align: center;
+}
+
+.card_ {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 460px;
+    border-radius: 8px;
+    padding: 0;
+    transition: 0.6s;
+    box-shadow: 5px 5px 10px rgb(141, 128, 128);
+}
+
+.card_title {
+    color:white;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    padding: 0.6rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    height: 40px;
+}
+
+.card_title h5 {
+    font-size: 1rem;
+}
+
+.card_image {
+    height: 160px;
+    width: 100%;
+}
+.card_image iframe {
+    width: 100%;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+    padding: 1rem;
+    height: 200px;
+}
+
+.card_footer {
+    height: 60px;
+    padding: 0.6rem;
+}
+
+.card_footer .btn {
+    width: 90%;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+}
+
+.card_footer .btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.3s ease 0s;
+}
+
+.app_footer {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+    justify-content: space-around;
+}
+
+.app_footer img {
+    width: 6rem;
+    height: 2rem;
+    margin: .1rem;
+    border-radius: 5px;
+}
+
+.card_:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#duolingo_image {
+    height: 60%;
+    width: 60%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+#drops_image {
+    height: 50%;
+    width: 55%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+#funeasylearn_image {
+    height: 50%;
+    width: 55%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+#worddive_image {
+    height: 50%;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+#movinglanguages_image {
+    height: 60%;
+    width: 40%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+#lingo_image {
+    height: 60%;
+    width: 40%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+
+/*SOCIAL CARDS*/
+
+.social_media {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.social_media a img {
+    width: 2.1rem;
+    height: 2.1rem;
+    transition: 0.3s;
+}
+
+.social_media a:hover img {
+    transform: scale(1.3);
+}
+
+.ruler {
+    border: none;
+    height: 6px;
+    width: 75%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    border-radius: 8px;
+}
+
+/*INDEX MENU MEDIA QUERIES*/
+@media screen and (max-width: 660px) {
+
+    .menu_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu_card {
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .menu_card_content {
+        width: 100%;
+        height: 220px;
+    }
+
+    .menu_card_image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .menu_card_image img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .menu_card_title {
+        border-radius: 0;
+        height: 30px;
+        text-align: center;
+        padding: 0.2rem;}
+
+    .menu_card_text {
+        height: 150px;
+    }
+
+    .menu_card_button {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .menu_container {grid-template-columns: repeat(1, 1fr);}
+}
+
+
+/*CARDS MEDIA QUERIES*/
+@media screen and (max-width: 650px) {
+
+    .cards_container {
+        grid-template-columns: repeat(7, 100%);
+        grid-auto-flow: row;
+        gap: 10%;
+        overflow-x: scroll;
+        scroll-snap-type: x proximity;
+        width: 100%;
+        padding: 1rem 12.5%
+    }
+    .cards_container::after {
+        content: '';
+        width: 1.3rem;
+    }
+
+    .card_ {
+        height: 100%;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+
+    .cards_container {
+        grid-template-columns: repeat(2, 1fr);}
+    }
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .cards_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1400px) and (max-width: 1700px) {
+    .cards_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
