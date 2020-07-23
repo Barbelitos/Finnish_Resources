@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
-const GMAIL_USER = process.env.GMAIL_USER
-const GMAIL_PASS = process.env.GMAIL_PASS
+const MAIL_USER = process.env.MAIL_USER
+const MAIL_PASS = process.env.MAIL_PASS
 
 //PAGES ROUTES
 router.get('/', function(req, res){
@@ -39,20 +39,20 @@ router.get('/contact', (req, res) => {
 //Form POST route
 router.post('/contact', (req, res) => {
     const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: 'smtp.privateemail.com',
         port: 465,
         secure: true,
         auth: {
-            user: GMAIL_USER,
-            pass: GMAIL_PASS
+            user: MAIL_USER,
+            pass: MAIL_PASS
         }
     })
     //How the message presents
     const message = {
-        from: req.body.name + ' &lt;' + req.body.email + '&gt',
-        to: GMAIL_USER,
-        subject: 'New message from contact form',
-        text: `${req.body.name} (${req.body.email}) says: ${req.body.suggestion}`
+        from: MAIL_USER,
+        to: MAIL_USER,
+        subject: 'New message from EasyFinland contact form',
+        text: `FROM: ${req.body.name}; EMAIL: (${req.body.email}); MESSAGE: ${req.body.suggestion}`
     }
     //Send Message
     transporter.sendMail(message, (error, response) => {

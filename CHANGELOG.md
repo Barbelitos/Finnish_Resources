@@ -5,3 +5,5 @@
 ## 21.JUL.2020 # - Added the 'About Us' template. Added a card for Finnish National Parks. Added the External Links Disclaimer in the footer. Minor tweaks in the cards.
 
 ## 22.JUL.2020  # - Added Poliisi and Expat-Finland cards. Updated the brand name. Added home page quote. Added fun facts to culture and language pages. Updated some cards info, among other minor changes.
+
+## 23.JUL.2020 # - Change form email for brand name. 
