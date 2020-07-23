@@ -6,4 +6,4 @@
 
 ## 22.JUL.2020  # - Added Poliisi and Expat-Finland cards. Updated the brand name. Added home page quote. Added fun facts to culture and language pages. Updated some cards info, among other minor changes.
 
-## 23.JUL.2020 # - Change form email for brand name. 
+## 23.JUL.2020 # - Change form email for brand name. Deployed to Heroku for online testing. Added Finnish Courses cards to language page. Added links for jump into in language page.

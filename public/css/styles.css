@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -90,19 +94,6 @@ main {
     font-size: 13px;
 }
 
-.description {
-    padding: 1rem;
-    font-size: .9rem;
-    letter-spacing: 0.2px;
-    word-spacing: 1.5px;
-    color: white;
-    border-radius: 8px;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
-    width: 75%;
-    margin:  .3rem auto 5rem auto ;
-}
-
 #index_description {
     border: none;
     background-image: url(/images/FinnFlagBG.jpg);
@@ -123,6 +114,46 @@ main {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.54);
     border-radius: 8px;
+}
+
+.description {
+    padding: 1rem;
+    font-size: .9rem;
+    letter-spacing: 0.2px;
+    word-spacing: 1.5px;
+    color: white;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    box-shadow: 5px 5px 10px rgb(141, 128, 128);
+    width: 75%;
+    margin:  .3rem auto 5rem auto ;
+}
+
+.description .jump_links {
+    list-style: none;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.description  li {
+    text-align: center;
+    list-style: none;
+    margin: .8rem auto;
+    transition: 0.5s;
+    width: fit-content;
+}
+
+.description li a {
+    color: white;
+}
+
+.description li a:hover {
+    text-decoration: none;
+}
+
+.description li:hover {
+    transform: scale(1.2);
 }
 
 .container_title {
@@ -152,6 +183,17 @@ main {
 
 /*ABOUT US AND INTRO*/
 
+.about_us {
+    width: 60%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    margin: 100px auto 100px auto;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    top: 0;
+    box-shadow: 5px 5px 10px rgb(141, 128, 128);
+}
+
 .clickme {
     width: 50%;
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
@@ -179,7 +221,7 @@ main {
 
 .wrapper {
     display: none;
-    width: 100%;
+    width: 75%;
     margin: 0 auto 100px auto;
 }
 
