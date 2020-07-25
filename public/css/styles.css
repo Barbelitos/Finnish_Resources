@@ -157,6 +157,8 @@ main {
 }
 
 .container_title {
+    display: flex;
+    justify-content: space-between;
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
     color: white;
@@ -164,6 +166,21 @@ main {
     margin: 4rem auto auto auto;
     padding: 0.1rem 1rem;
     border-radius: 8px;
+}
+
+.go_top {
+    text-align: center;
+}
+
+.go_top a {
+    line-height: 0.1rem;
+    font-size: .6rem;
+    color: white;
+}
+
+.go_top a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .error_container {
