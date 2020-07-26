@@ -25,7 +25,7 @@ header {
     width: 100%;
     top: 0;
     border-bottom: 10px solid #007bff;
-    background-image: linear-gradient(rgba(13, 13, 14, 0.5), rgba(50, 156, 241, 0.5)), url(/images/FinlandStars.jpg);
+    background-image: linear-gradient(rgba(13, 13, 14, .9), rgba(50, 156, 241, .8)), url(/images/FinlandStars.jpg);
 }
 
 .navbar-custom {
@@ -140,20 +140,25 @@ main {
     text-align: center;
     list-style: none;
     margin: .8rem auto;
-    transition: 0.5s;
+    transition: all 0.5s;
     width: fit-content;
 }
 
 .description li a {
     color: white;
+    transition: all 0.7s;
+    border-radius: 8px;
+    padding: .1rem;
 }
 
 .description li a:hover {
     text-decoration: none;
 }
 
-.description li:hover {
-    transform: scale(1.2);
+.description li:hover a {
+    /* transform: scale(1.2); */
+    background: white;
+    color: #007bff;
 }
 
 .container_title {
@@ -174,7 +179,7 @@ main {
 
 .go_top a {
     line-height: 0.1rem;
-    font-size: .6rem;
+    font-size: .5rem;
     color: white;
 }
 
@@ -323,5 +328,11 @@ main {
 
     .header-content p {
         padding: .5rem;
+    }
+
+    .description li:hover a {
+        transform: scale(1.2);
+        color: white;
+        background-color: inherit;
     }
 }

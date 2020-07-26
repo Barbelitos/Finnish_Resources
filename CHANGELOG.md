@@ -9,3 +9,5 @@
 ## 23.JUL.2020 # - Change form email for brand name. Deployed to Heroku for online testing. Added Finnish Courses cards to language page. Added links for jump into in language page.
 
 ## 25.JUL.2020 # - Added "back to top" button in tittles og the language containers. Added social media to some cards.
+
+## 26.JUL.2020 # - Added "Good to know" to useful links page.
