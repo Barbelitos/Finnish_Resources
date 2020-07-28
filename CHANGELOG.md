@@ -11,3 +11,5 @@
 ## 25.JUL.2020 # - Added "back to top" button in tittles og the language containers. Added social media to some cards.
 
 ## 26.JUL.2020 # - Added "Good to know" to useful links page.
+
+## 28.JUL.2020 # - Changed the main logo "Easy Finland". Added Moomin Card.

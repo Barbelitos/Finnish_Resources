@@ -25,7 +25,7 @@ header {
     width: 100%;
     top: 0;
     border-bottom: 10px solid #007bff;
-    background-image: linear-gradient(rgba(13, 13, 14, .9), rgba(50, 156, 241, .8)), url(/images/FinlandStars.jpg);
+    background-image: linear-gradient(rgba(13, 13, 14, .5), rgba(76, 100, 121, 0.7)), url(/images/FinlandStars.jpg);
 }
 
 .navbar-custom {
@@ -105,7 +105,7 @@ main {
     border-radius: 8px;
     box-shadow: 3px 3px 10px rgb(141, 128, 128);
     width: 75%;
-    margin: .3rem auto 5rem auto;
+    margin: 1rem auto 8rem auto;
 }
 
 .overlay {
@@ -126,7 +126,7 @@ main {
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
     width: 75%;
-    margin:  .3rem auto 5rem auto ;
+    margin:  1rem auto 8rem auto ;
 }
 
 .description .jump_links {
@@ -229,7 +229,7 @@ main {
 }
 
 .clickme p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .clickme p i {
@@ -245,13 +245,14 @@ main {
     display: none;
     width: 75%;
     margin: 0 auto 100px auto;
+    overflow: hidden;
 }
 
 .fact_container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 75%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .fact_image {
@@ -329,7 +330,9 @@ main {
     .header-content p {
         padding: .5rem;
     }
+}
 
+@media screen and (max-width: 850px) {
     .description li:hover a {
         transform: scale(1.2);
         color: white;
