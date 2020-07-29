@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 /*INDEX MENU*/
 .menu_container {
     display: grid;
@@ -67,6 +70,7 @@
     border: none;
     transition: 0.4s;
     padding: 0;
+    color: white;
 }
 
 .menu_card_button a {

@@ -156,7 +156,6 @@ main {
 }
 
 .description li:hover a {
-    /* transform: scale(1.2); */
     background: white;
     color: #007bff;
 }
@@ -203,18 +202,7 @@ main {
     text-align: center;
 }
 
-/*ABOUT US AND INTRO*/
-
-.about_us {
-    width: 60%;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    margin: 100px auto 100px auto;
-    text-align: center;
-    color: white;
-    border-radius: 8px;
-    top: 0;
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
-}
+/*FUN FACTS*/
 
 .clickme {
     width: 50%;

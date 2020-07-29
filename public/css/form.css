@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.about_us {
+    width: 60%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    margin: 100px auto 100px auto;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    top: 0;
+    box-shadow: 5px 5px 10px rgb(141, 128, 128);
+}
+
+
 #contactform {
-    width: 75%;
+    width: 60%;
     margin: 50px auto 10rem auto;
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
     padding: 30px;
@@ -28,13 +43,12 @@ label {
 input {
     border: 1px solid black;
     border-radius: 8px;
+    width: 40%;
 }
 
 textarea {
-    border-style: ridge;
-    margin-right: 5px;
-    width: 80%;
     border-radius: 8px;
+    width: 80%;
 }
 
 input:focus, textarea:focus {
@@ -45,4 +59,16 @@ input:focus, textarea:focus {
 #contactform button {
     border-radius: 8px;
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+}
+
+@media screen and (max-width: 750px) {
+    #contactform {
+        width: 75%;
+    }
+    input {
+        width: 80%;
+    }
+    textarea {
+        width: 100%;
+    }
 }
