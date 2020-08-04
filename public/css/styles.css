@@ -126,7 +126,7 @@ main {
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
     width: 75%;
-    margin:  1rem auto 8rem auto ;
+    margin:  1rem auto 5rem auto ;
 }
 
 .description .jump_links {

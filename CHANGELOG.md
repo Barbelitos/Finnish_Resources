@@ -18,4 +18,4 @@
 
 ## 03.AUG.2020 # - Added infoFinland card to Useful Links. Added Podcasts section in Language.
 
-## 04.AUG.2020 # - Added separate javascript in public folder. Added single meta description for all pages. Added card banners.Optimized pictures aspect ratio.
+## 04.AUG.2020 # - Added separate javascript in public folder. Added single meta description for all pages. Added card banners. Optimized pictures aspect ratio. Added About Us cards and pictures of each one of us.
