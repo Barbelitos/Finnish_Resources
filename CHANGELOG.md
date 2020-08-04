@@ -15,3 +15,7 @@
 ## 28.JUL.2020 # - Changed the main logo "Easy Finland". Added Moomin Card. Changed the contact form sizes.
 
 ## 29.JUL.2020 # - Optimized html of index card buttons. Removed caption tag from index quote, replaced by a span.
+
+## 03.AUG.2020 # - Added infoFinland card to Useful Links. Added Podcasts section in Language.
+
+## 04.AUG.2020 # - Added separate javascript in public folder. Added single meta description for all pages. Added card banners.Optimized pictures aspect ratio.
