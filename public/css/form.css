@@ -65,13 +65,11 @@
 }
 
 .about_text {
-    /* border: 1px solid red; */
     text-align: center;
     width: 75%;
 }
 
 .about_text h6 {
-    /* border: 1px solid red; */
     font-size: 1rem;
     width: 70%;
     margin: .5rem auto 2rem auto;
@@ -82,7 +80,6 @@
 }
 
 .about_text p {
-    /* border: 1px solid red; */
     font-size: .8rem;
     font-weight: 500;
 }
