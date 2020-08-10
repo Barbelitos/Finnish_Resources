@@ -73,3 +73,11 @@
 
 - Added social media footer to Moomin card.
 - Added All Points North card to News Channels.
+
+## 10.AUG.2020
+
+- Added effects to menu card images.
+- Changed from grid to flexbox in card containers.
+- Added "Learn the Culture" heading in Culture.
+- Minor changes.
+
