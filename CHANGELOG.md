@@ -81,3 +81,8 @@
 - Added "Learn the Culture" heading in Culture.
 - Minor changes.
 
+## 11.AUG.2020
+
+- Added background image to about us cards.
+
+

@@ -21,7 +21,7 @@ header {
     width: 100%;
     top: 0;
     border-bottom: 10px solid #007bff;
-    background-image: linear-gradient(rgba(13, 13, 14, 0.8), rgba(76, 100, 121, 0.5)), url(/images/FinlandStars.jpg);
+    background-image: linear-gradient(rgba(13, 13, 14, 0.7), rgba(29, 37, 44, 0.5)), url(/images/FinlandStars.jpg);
 }
 
 .navbar-custom {
@@ -199,7 +199,8 @@ main {
 }
 
 .message_form {
-    margin: 10rem auto;
+    padding: 10rem auto 20rem auto;
+    margin: 0 auto 5rem auto;
     text-align: center;
 }
 

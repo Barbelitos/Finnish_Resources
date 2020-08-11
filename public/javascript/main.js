@@ -7,11 +7,6 @@ $(function($) {
     });
 });
 
-// $( ".navbar-toggler" ).click(function() {
-//     $( ".header-content" ).fadeToggle();
-// });
-
-
 document.querySelector('.navbar-toggler').onclick = function() {
     var headerContent = document.querySelector('.header-content');
     headerContent.style.transition = 'opacity 0.5s';
