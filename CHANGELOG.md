@@ -85,4 +85,12 @@
 
 - Added background image to about us cards.
 
+## 13.AUG.2020
+
+- Removed overlay transition in menu cards for mobile devices
+
+## 17.AUG.2020
+
+- Added quick links in all descriptions.
+- Minor tweaks
 

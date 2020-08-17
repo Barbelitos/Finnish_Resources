@@ -5,12 +5,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -84,6 +91,7 @@ main {
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
     width: 100%;
     padding: 0;
+    bottom: 0;
 }
 
 .footer-copyright p {
@@ -126,32 +134,27 @@ main {
 }
 
 .description .jump_links {
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: auto;
 }
 
-.description  li {
+.description a {
     text-align: center;
+    margin: .2rem auto;
     list-style: none;
-    margin: .8rem auto;
     transition: all 0.5s;
-    width: fit-content;
-}
-
-.description li a {
+    width: 70%;
     color: white;
     transition: all 0.7s;
     border-radius: 8px;
-    padding: .1rem;
 }
 
-.description li a:hover {
+.description a:hover {
     text-decoration: none;
-}
-
-.description li:hover a {
     background: white;
     color: #007bff;
 }
@@ -209,7 +212,7 @@ main {
 .clickme {
     width: 50%;
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    margin: 100px auto 100px auto;
+    margin: 100px auto 40px auto;
     text-align: center;
     color: white;
     border-radius: 8px;
@@ -299,10 +302,12 @@ main {
     font-weight: 500;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 750px) {
     .fact_container {
         grid-template-columns: 1fr;
-        margin: 50px auto;
+        margin: 40px auto;
     }
 
     .fact_image {
@@ -323,9 +328,23 @@ main {
 }
 
 @media screen and (max-width: 850px) {
-    .description li:hover a {
-        transform: scale(1.2);
-        color: white;
+    .description a:hover {
+        background-image: linear-gradient(to bottom right, rgb(226, 223, 223), rgb(250, 250, 250));
+        color: #007bff;
+        /* transform: scale(1.2); */
+        /* color: white; */
         background-color: inherit;
+    }
+
+    .description a {
+        background-image: linear-gradient(to bottom right, rgb(226, 223, 223), rgb(250, 250, 250));
+        color: #007bff;
+        border-radius: 8px;
+        padding: .1rem;
+        margin: .5rem auto;
+        border: none;
+        width: 100%;
+        font-weight: 500;
+        box-shadow: 1px 1px 3px rgb(255, 254, 254);
     }
 }
