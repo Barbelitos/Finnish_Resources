@@ -94,3 +94,7 @@
 - Added quick links in all descriptions.
 - Minor tweaks
 
+## 20.AUG.2020
+
+- Changed the font of the header title to Dancing Script
+

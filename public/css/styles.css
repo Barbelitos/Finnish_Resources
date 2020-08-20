@@ -42,11 +42,6 @@ header {
     width: 100%;
 }
 
-.navbar-brand {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 600;
-}
-
 .navbar_img {
     border-radius: 50%;
 }
@@ -68,6 +63,7 @@ header {
 }
 
 .header-content h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     text-shadow: 1px .5px black;
 }
