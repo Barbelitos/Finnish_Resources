@@ -204,7 +204,7 @@
 @media screen and (max-width: 828px) {
     .cards_container {
         display: grid;
-        grid-template-columns: repeat(9, 100%);
+        grid-template-columns: repeat(12, 100%);
         grid-auto-flow: row;
         gap: 10%;
         overflow-x: scroll;
