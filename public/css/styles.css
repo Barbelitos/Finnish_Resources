@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    height: 350px;
+    height: 320px;
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -94,82 +94,62 @@ main {
     font-size: 13px;
 }
 
-#index_description {
-    border: none;
-    background-image: url(/images/FinnFlagBG.jpg);
-    background-size: cover;
-    font-size: .9rem;
-    letter-spacing: 0.2px;
-    word-spacing: 1.5px;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 3px 3px 10px rgb(141, 128, 128);
-    width: 75%;
-    margin: 1rem auto 8rem auto;
-}
-
-.overlay {
-    padding: 2rem;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.54);
-    border-radius: 8px;
-}
-
 .description {
-    padding: 1rem;
+    padding: .5rem;
     font-size: .9rem;
     letter-spacing: 0.2px;
     word-spacing: 1.5px;
-    color: white;
+    color: black;
     border-radius: 8px;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
+    /* background-image: linear-gradient(to bottom right, #007bff, #3d6896); */
+    /* box-shadow: 5px 5px 10px rgb(141, 128, 128); */
     width: 75%;
-    margin:  1rem auto 5rem auto ;
+    margin:  0.2rem auto 3rem auto ;
 }
 
 .description .jump_links {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     list-style: none;
-    width: 60%;
+    width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 2rem auto auto auto;
 }
 
 .description a {
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
     text-align: center;
-    margin: .2rem auto;
+    margin: .5rem auto;
     list-style: none;
     transition: all 0.5s;
-    width: 70%;
-    color: white;
-    transition: all 0.7s;
+    width: 17%;
+    color: rgb(247, 241, 241);
+    transition: all 0.5s;
     border-radius: 8px;
+    font-size: 12px;
 }
 
 .description a:hover {
     text-decoration: none;
-    background: white;
-    color: #007bff;
+    color: rgb(247, 241, 241);
 }
 
 .container_title {
     display: flex;
     justify-content: space-between;
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    color: white;
+    /* box-shadow: 5px 5px 10px rgb(141, 128, 128); */
+    /* background-image: linear-gradient(to bottom right, #007bff, #3d6896); */
+    /* color: white; */
     width: 75%;
     margin: 4rem auto auto auto;
-    padding: 0.1rem 1rem;
+    /* padding: 0.1rem 1rem; */
     border-radius: 8px;
 }
 
 .container_title h4 {
     margin: .1rem;
-    padding: .2rem;
+    /* padding: .2rem; */
+    font-size: 40px;
 }
 
 .go_top {
@@ -179,12 +159,22 @@ main {
 .go_top a {
     line-height: 0.1rem;
     font-size: .5rem;
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 .go_top a:hover {
     text-decoration: none;
-    color: white;
+    /* color: white; */
+}
+
+.title_ruler {
+    margin: 0 auto auto 12.5%;
+    border: none;
+    height: 6px;
+    width: 8%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    border-radius: 8px;
 }
 
 .error_container {
@@ -205,97 +195,35 @@ main {
 
 /*FUN FACTS*/
 
-.clickme {
+.slideshow {
     width: 50%;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    margin: 100px auto 40px auto;
-    text-align: center;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    top: 0;
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
-}
-
-.clickme p {
-    font-size: 1.1rem;
-}
-
-.clickme p i {
-    margin-left: 0.5rem;
-    transition: all 0.7s;
-}
-
-.rotated {
-    transform: rotateX(180deg);
-}
-
-.wrapper {
-    display: none;
-    width: 75%;
-    margin: 0 auto 100px auto;
+    height: 400px;
     overflow: hidden;
-}
-
-.fact_container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 75%;
+    position: relative;
     margin: 0 auto;
+    border-radius: 8px;
+    border: 4px solid #007bff;
+    /* background-size: cover; */
 }
 
-.fact_image {
-    width: 15rem;
-    height: 15rem;
-}
-
-.fact_image img {
+.slide_image {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     background-size: cover;
-    border: 5px solid #007bff;
+    position: absolute;
+    animation: slide 30s infinite;
 }
 
-.fact_text {
-    padding: 2.5rem 2.2rem;
-    text-align: center;
-}
-
-.fact_text p {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.intro_container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 65%;
-    margin: 70px auto;
-}
-
-.intro_image {
-    width: 15rem;
-    height: 15rem;
-}
-
-.intro_image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
-    background-size: cover;
-    border: 5px solid #007bff;
-}
-
-.intro_text {
-    height: 15rem;
-    padding: 1.5rem 1.5rem;
-    text-align: center;
-}
-
-.intro_text p {
-    font-size: 1rem;
-    font-weight: 500;
+.slide_image p {
+    float: right;
+    width: 20%;
+    margin: 60px 10px 30px 10px;
+    padding: 0.2rem;
+    color: rgb(219, 214, 214);
+    /* background-color: rgba(38, 38, 39, 0.4); */
+    font-size: 13px;
+    line-height: 1.6;
+    text-shadow: 1px 2px 2px black;
 }
 
 /* MEDIA QUERIES */
@@ -321,20 +249,33 @@ main {
     .header-content p {
         padding: .5rem;
     }
+
+    .slideshow {
+        width: 80%;
+        height: 300px;
+    }
+
+    .slide_image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .slide_image p {
+        /* height: 100px; */
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+        margin: 50px auto;
+        float: none;
+    }
 }
 
 @media screen and (max-width: 850px) {
-    .description a:hover {
-        background-image: linear-gradient(to bottom right, rgb(226, 223, 223), rgb(250, 250, 250));
-        color: #007bff;
-        /* transform: scale(1.2); */
-        /* color: white; */
-        background-color: inherit;
+    .description .jump_links {
+        flex-direction: column;
     }
 
     .description a {
-        background-image: linear-gradient(to bottom right, rgb(226, 223, 223), rgb(250, 250, 250));
-        color: #007bff;
         border-radius: 8px;
         padding: .1rem;
         margin: .5rem auto;

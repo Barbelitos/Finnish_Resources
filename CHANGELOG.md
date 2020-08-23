@@ -96,5 +96,18 @@
 
 ## 20.AUG.2020
 
-- Changed the font of the header title to Dancing Script
+- Changed the font of the header title to Dancing Script.
+
+##22.AUG.2020
+
+- Index Menu major design change
+- Removed the blue boxes of the descriptions.
+- Added text to Susana and Cris cards.
+- Removed fun facts from each page.
+- Removed quote from index.
+- Added blue rulers to page titles.
+
+##23.AUG.2020
+
+- Added the fun facts slideshow to culture page.
 
