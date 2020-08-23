@@ -183,7 +183,7 @@ input:focus, textarea:focus {
     }
 
     .susana_card .card_bg {
-        z-index: -100;
+        z-index: 1;
         position: absolute;
         width: 27%;
         height: 100%;
@@ -207,7 +207,7 @@ input:focus, textarea:focus {
 
     .cris_card .card_bg, .david_card .card_bg, .susana_card .card_bg {
         border-radius: 8px 0 0 8px;
-        z-index: -100;
+        z-index: 0;
         object-fit: cover;
         width: 100%;
         height: 40%;
