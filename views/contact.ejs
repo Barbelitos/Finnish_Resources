@@ -1,18 +1,18 @@
 <%- include("includes/header") %>
 
     <div class="description">
-        <h1 class="maintitle">Suggestions</h1>
+        <h1 class="maintitle">Who we are</h1>
         <hr class="index_ruler">
-        <p>If you know about any other important resources that we haven't talked about in this website or if you just want to say hi, please feel free to contact us through the form below. We are happy to hear from you!</p>
+        <p>This website was created by three Portuguese foreigner souls that, despite all odds, have chosen from their hearts to make Finland feel like home. Coming from different backgrounds, having faced very personal immigration journeys, and having developed unique relationships to Finland, we decided to unite in putting this project together because… why not?</p>
+        <p>Find out a little more about us below and, in case you have nice ideas for this project, let us know how we can make it better!</p>
     </div>
 
-    <div class="about_us">
-        <p>About us</p>
-    </div>
     <div class="about_container">
         <div class="cris_card">
-            <div class="card_bg">
-                <img src="/images/Lapland.jpg" alt="">
+            <div class="back">
+                <div class="card_bg">
+                    <img src="/images/Sunny.png" alt="">
+                </div>
             </div>
             <div class="about_image">
                 <img src="/images/Cris.jpg" alt="">
@@ -33,10 +33,13 @@
                 <h6 class="about_name">Susana Marques</h6>
                 <p>I am Susana. I am studying a Bachelor of Social Sciences in Laurea University. I am from Portugal and I live in Finland since 2007. I love to cook and to spend time with family and friends. I like to help people as much as possible and I hope you find in EasyFinland what you are looking for. Tervetuloa!</p>
             </div>
+            <div class="back"></div>
         </div>
         <div class="david_card">
-            <div class="card_bg">
-                <img src="/images/View.jpg" alt="">
+            <div class="back">
+                <div class="card_bg">
+                    <img src="/images/View.jpg" alt="">
+                </div>
             </div>
             <div class="about_image">
                 <img src="/images/David.jpg" alt="">
@@ -48,21 +51,33 @@
         </div>
     </div>
 
-    <form action="/contact" class="form-group" id="contactform" method="POST">
-        <h2>Please Tell Us</h2>
-        <div class="field">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" placeholder="Your Name">
+    <div class="container_title">
+        <h1>Suggestions</h1>
+    </div>
+    <hr class="title_ruler">
+
+    <div class="contact_form">
+        <div class="form_header">
+            <p>We want to make this a community-based project. Do you have a nice idea, or do you know any online content about Finland that should be listed here but isn’t yet? Let us know!</p>
         </div>
-        <div class="field">
-            <label for="email">Email</label><br>
-            <input type="email" name="email" placeholder="Your email">
-        </div>
-        <div class="field">
-            <label for="suggestion">Suggestion</label><br>
-            <textarea name="suggestion" id="suggestion" rows="5" columns="30" placeholder="Write your suggestion here"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <form action="/contact" class="form-group" id="contactform" method="POST">
+            <div class="form_content">
+                <div class="field">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" placeholder="Your Name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="Your email">
+                </div>
+                <div class="field">
+                    <label for="suggestion">Suggestion</label><br>
+                    <textarea name="suggestion" id="suggestion" rows="5" columns="30" placeholder="Write your suggestion here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    
 
 <%- include("includes/footer") %>

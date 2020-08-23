@@ -21,14 +21,14 @@ body {
 }
 
 header {
-    height: 320px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     position: absolute;
     width: 100%;
     top: 0;
-    border-bottom: 10px solid #007bff;
     background-image: linear-gradient(rgba(13, 13, 14, 0.7), rgba(29, 37, 44, 0.5)), url(/images/FinlandStars.jpg);
+    z-index: 10;
 }
 
 .navbar-custom {
@@ -48,7 +48,7 @@ header {
 
 .navbar-collapse {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .header-content {
@@ -74,13 +74,14 @@ header {
 
 main {
     min-height: calc(100vh - 110px - 72px);
-    z-index: 1000;
-    padding-top: 400px;
+    z-index: 0;
+    padding-top: 340px;
+    background-color: #007bff09
 }
 
-.maintitle {
+/* .maintitle {
     font-size: 2rem;
-}
+} */
 
 .page-footer {
     color: white;
@@ -90,8 +91,14 @@ main {
     bottom: 0;
 }
 
-.footer-copyright p {
+.page-footer h6 {
+    margin: 0 auto .2rem auto;
     font-size: 13px;
+}
+
+.footer-copyright p {
+    margin: 0 auto;
+    font-size: 10px;
 }
 
 .description {
@@ -101,15 +108,12 @@ main {
     word-spacing: 1.5px;
     color: black;
     border-radius: 8px;
-    /* background-image: linear-gradient(to bottom right, #007bff, #3d6896); */
-    /* box-shadow: 5px 5px 10px rgb(141, 128, 128); */
     width: 75%;
     margin:  0.2rem auto 3rem auto ;
 }
 
 .description .jump_links {
     display: flex;
-    /* flex-direction: column; */
     list-style: none;
     width: 100%;
     text-align: center;
@@ -122,34 +126,35 @@ main {
     margin: .5rem auto;
     list-style: none;
     transition: all 0.5s;
-    width: 17%;
+    width: 15%;
     color: rgb(247, 241, 241);
     transition: all 0.5s;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 15px;
+    padding: .2rem;
+}
+
+.description h1 {
+    font-size: 2.6rem;
 }
 
 .description a:hover {
     text-decoration: none;
     color: rgb(247, 241, 241);
+    transform: scale(1.07);
 }
 
 .container_title {
     display: flex;
     justify-content: space-between;
-    /* box-shadow: 5px 5px 10px rgb(141, 128, 128); */
-    /* background-image: linear-gradient(to bottom right, #007bff, #3d6896); */
-    /* color: white; */
     width: 75%;
     margin: 4rem auto auto auto;
-    /* padding: 0.1rem 1rem; */
     border-radius: 8px;
 }
 
 .container_title h4 {
     margin: .1rem;
-    /* padding: .2rem; */
-    font-size: 40px;
+    font-size: 26px;
 }
 
 .go_top {
@@ -159,20 +164,19 @@ main {
 .go_top a {
     line-height: 0.1rem;
     font-size: .5rem;
-    /* color: white; */
     color: black;
 }
 
 .go_top a:hover {
     text-decoration: none;
-    /* color: white; */
+    color: black;
 }
 
 .title_ruler {
     margin: 0 auto auto 12.5%;
     border: none;
     height: 6px;
-    width: 8%;
+    width: 5%;
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
     border-radius: 8px;
 }
@@ -196,14 +200,12 @@ main {
 /*FUN FACTS*/
 
 .slideshow {
-    width: 50%;
-    height: 400px;
+    width: 75%;
+    height: 300px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
     border-radius: 8px;
-    border: 4px solid #007bff;
-    /* background-size: cover; */
 }
 
 .slide_image {
@@ -215,15 +217,14 @@ main {
 }
 
 .slide_image p {
-    float: right;
-    width: 20%;
-    margin: 60px 10px 30px 10px;
+    width: 70%;
+    margin: 40px auto;
     padding: 0.2rem;
     color: rgb(219, 214, 214);
-    /* background-color: rgba(38, 38, 39, 0.4); */
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.6;
     text-shadow: 1px 2px 2px black;
+    text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -261,7 +262,6 @@ main {
     }
 
     .slide_image p {
-        /* height: 100px; */
         width: 80%;
         margin: 10px;
         text-align: center;
@@ -283,5 +283,13 @@ main {
         width: 100%;
         font-weight: 500;
         box-shadow: 1px 1px 3px rgb(255, 254, 254);
+    }
+
+    .title_ruler {
+        width: 15%;
+    }
+
+    .index_ruler {
+        width: 25%;
     }
 }

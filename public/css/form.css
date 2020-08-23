@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-.about_us {
-    width: 40%;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    margin: 50px auto 40px auto;
-    text-align: center;
-    color: white;
-    border-radius: 8px;
-    top: 0;
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
-}
-
 .about_container {
     display: flex;
     flex-direction: column;
@@ -20,6 +9,7 @@
 }
 
 .cris_card {
+    min-height: 200px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -31,6 +21,7 @@
 }
 
 .susana_card {
+    min-height: 200px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -42,6 +33,7 @@
 }
 
 .david_card {
+    min-height: 200px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -50,6 +42,14 @@
     margin: .8rem auto;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
+}
+
+.back {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
 .cris_card .card_bg, .david_card .card_bg {
@@ -62,7 +62,7 @@
 }
 
 .susana_card .card_bg {
-    z-index: -100;
+    z-index: 0;
     position: absolute;
     object-fit: cover;
     width: 30%;
@@ -71,6 +71,7 @@
 }
 
 .about_image {
+    z-index: 1;
     margin: .6rem;
     padding: .8rem .3rem;
     width: 10rem;
@@ -107,25 +108,32 @@
     padding: 0;
 }
 
-#contactform {
+
+.contact_form {
+    background-color: white;
+    margin: 50px auto;
     width: 60%;
-    margin: 50px auto 10rem auto;
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
-    padding: 30px;
     border-radius: 8px;
+    overflow: hidden;
 }
 
-#contactform h2 {
-    padding: 2rem;
-    font-size: 1.5rem;
-    height: 100px;
-    margin: -30px -30px 30px -30px;
-    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.12);
+.form_header {
     background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    color: rgb(248, 242, 242);
-    box-shadow: inset 0px 2px 2px 0px rgba(40, 20, 155, 0.151);
-    text-transform: uppercase;
-    border-radius: 8px 8px 0 0;
+    color: white;
+    padding: 1rem;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    font-size: 17px;
+}
+
+.form_content {
+    text-align: center;
+}
+
+label {
+    width: 60%;
+    text-align: left;
 }
 
 label {
@@ -137,12 +145,13 @@ label {
 input {
     border: 1px solid black;
     border-radius: 8px;
-    width: 40%;
+    width: 60%;
 }
 
 textarea {
+    border: 1px solid black;
     border-radius: 8px;
-    width: 80%;
+    width: 60%;
 }
 
 input:focus, textarea:focus {
@@ -220,13 +229,18 @@ input:focus, textarea:focus {
         width: 80%;
     }
 
-    #contactform {
-        width: 75%;
+    .contact_form {
+        width: 80%;
     }
+
+    label {
+        width: 80%;
+    }
+
     input {
         width: 80%;
     }
     textarea {
-        width: 100%;
+        width: 80%;
     }
 }

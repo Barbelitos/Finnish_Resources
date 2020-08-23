@@ -25,14 +25,20 @@ router.get('/culture', (req, res) => {
 });
 
 router.get('/useful', (req, res) => {
-    res.render("useful", {title: 'Useful Links', 
-                            page: 'Useful Links',
+    res.render("useful", {title: 'Useful Info',
+                            page: 'Useful Info',
+                            subpage: ''});
+});
+
+router.get('/foreigners', (req, res) => {
+    res.render("foreigners", {title: 'Finland by foreigners',
+                            page: ' Finland By Foreigners',
                             subpage: ''});
 });
 
 router.get('/contact', (req, res) => {
-    res.render("contact", {title: 'Contact Us', 
-                            page: 'Contact Us',
+    res.render("contact", { title: 'About us',
+                            page: 'About Us',
                             subpage: ''});
 });
 

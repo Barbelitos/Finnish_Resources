@@ -110,4 +110,11 @@
 ##23.AUG.2020
 
 - Added the fun facts slideshow to culture page.
+- Added 'foreigners' route.
+- Changed cards design.
+- Added 'no profit' to the disclaimer.
+- Added new descriptions to index menu.
+- Added new descriptions to each page.
+- Major changes in Language page, including more cards, card texts and picture changes.
+- Changed the form appearance.
 

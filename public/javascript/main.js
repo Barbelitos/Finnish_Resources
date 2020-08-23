@@ -18,11 +18,6 @@ document.querySelector('.navbar-toggler').onclick = function() {
     }
 };
 
-$('.clickme').on('click',function(){
-    $('.wrapper').slideToggle();
-    $('.clickme i').toggleClass('rotated');
-});
-
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -53,4 +48,4 @@ setInterval(function() {
     .fadeIn(2000)
     .end()
     .appendTo('.slideshow');
-},  10000);
+},  5000);
