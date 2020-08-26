@@ -118,3 +118,11 @@
 - Major changes in Language page, including more cards, card texts and picture changes.
 - Changed the form appearance.
 
+##24.AUG.2020
+
+- Optimized pictures for app cards.
+
+##26.AUG.2020
+
+- Minor visual changes.
+

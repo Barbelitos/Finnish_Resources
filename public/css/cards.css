@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /* PAGES CARDS */
-
 .cards_container {
     display: flex;
     flex-flow: row wrap;
@@ -31,7 +30,6 @@
 .card_:hover {
     transform: translateY(-2%);
     cursor: pointer;
-    box-shadow: 5px 5px 10px rgb(141, 128, 128);
 }
 
 .card_title {
@@ -98,49 +96,6 @@
 }
 
 /* APP CARDS */
-
-#duolingo_image {
-    height: 60%;
-    width: 60%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-
-#drops_image {
-    height: 50%;
-    width: 55%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-
-#funeasylearn_image {
-    height: 50%;
-    width: 55%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-
-#worddive_image {
-    height: 50%;
-    width: 50%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-
-#movinglanguages_image {
-    height: 60%;
-    width: 40%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-
-#lingo_image {
-    height: 60%;
-    width: 40%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-
 .app_footer {
     display: flex;
     padding: 1rem;
@@ -157,7 +112,6 @@
 }
 
 /* BANNERS */
-
 .free_banner {
     position: absolute;
     background-image: linear-gradient(to bottom right, rgb(42, 128, 42), rgb(74, 156, 74));
@@ -182,7 +136,6 @@
 }
 
 /* SOCIAL CARDS */
-
 .social_media {
     display: flex;
     justify-content: space-around;
@@ -200,7 +153,6 @@
 }
 
 /* MEDIA QUERIES*/
-
 @media screen and (max-width: 828px) {
     .cards_container {
         display: grid;
@@ -223,5 +175,9 @@
         display: inline-block;
         width: 100%;
         border-radius: 8px;
+    }
+
+    .card_:hover {
+        transform: translateY(0);
     }
 }

@@ -83,24 +83,6 @@ main {
     font-size: 2rem;
 } */
 
-.page-footer {
-    color: white;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    width: 100%;
-    padding: 0;
-    bottom: 0;
-}
-
-.page-footer h6 {
-    margin: 0 auto .2rem auto;
-    font-size: 13px;
-}
-
-.footer-copyright p {
-    margin: 0 auto;
-    font-size: 10px;
-}
-
 .description {
     padding: .5rem;
     font-size: .9rem;
@@ -128,14 +110,23 @@ main {
     transition: all 0.5s;
     width: 15%;
     color: rgb(247, 241, 241);
-    transition: all 0.5s;
+    transition: all 0.3s;
     border-radius: 8px;
     font-size: 15px;
     padding: .2rem;
 }
 
 .description h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
+}
+
+.main_ruler {
+    border: none;
+    height: 6px;
+    width: 8%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    border-radius: 8px;
+    margin: auto auto 20px 0%;
 }
 
 .description a:hover {
@@ -157,6 +148,15 @@ main {
     font-size: 26px;
 }
 
+.title_ruler {
+    margin: 0 auto auto 12.5%;
+    border: none;
+    height: 6px;
+    width: 4%;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    border-radius: 8px;
+}
+
 .go_top {
     text-align: center;
 }
@@ -170,15 +170,6 @@ main {
 .go_top a:hover {
     text-decoration: none;
     color: black;
-}
-
-.title_ruler {
-    margin: 0 auto auto 12.5%;
-    border: none;
-    height: 6px;
-    width: 5%;
-    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
-    border-radius: 8px;
 }
 
 .error_container {
@@ -197,7 +188,7 @@ main {
     text-align: center;
 }
 
-/*FUN FACTS*/
+/* SLIDESHOW */
 
 .slideshow {
     width: 75%;
@@ -213,7 +204,7 @@ main {
     height: 100%;
     background-size: cover;
     position: absolute;
-    animation: slide 30s infinite;
+    /* animation: fade 5s infinite; */
 }
 
 .slide_image p {
@@ -227,8 +218,27 @@ main {
     text-align: center;
 }
 
-/* MEDIA QUERIES */
 
+/* FOOTER */
+.page-footer {
+    color: white;
+    background-image: linear-gradient(to bottom right, #007bff, #3d6896);
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+}
+
+.page-footer h6 {
+    margin: 0 auto .2rem auto;
+    font-size: 13px;
+}
+
+.footer-copyright p {
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 750px) {
     .fact_container {
         grid-template-columns: 1fr;
@@ -286,10 +296,10 @@ main {
     }
 
     .title_ruler {
-        width: 15%;
+        width: 10%;
     }
 
-    .index_ruler {
-        width: 25%;
+    .main_ruler {
+        width: 30%;
     }
 }
