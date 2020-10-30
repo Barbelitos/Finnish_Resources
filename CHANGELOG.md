@@ -98,7 +98,7 @@
 
 - Changed the font of the header title to Dancing Script.
 
-##22.AUG.2020
+## 22.AUG.2020
 
 - Index Menu major design change
 - Removed the blue boxes of the descriptions.
@@ -107,7 +107,7 @@
 - Removed quote from index.
 - Added blue rulers to page titles.
 
-##23.AUG.2020
+## 23.AUG.2020
 
 - Added the fun facts slideshow to culture page.
 - Added 'foreigners' route.
@@ -118,11 +118,15 @@
 - Major changes in Language page, including more cards, card texts and picture changes.
 - Changed the form appearance.
 
-##24.AUG.2020
+## 24.AUG.2020
 
 - Optimized pictures for app cards.
 
-##26.AUG.2020
+## 26.AUG.2020
 
 - Minor visual changes.
+
+## 19.SEP.2020
+
+- Minor change in cards media queries.
 

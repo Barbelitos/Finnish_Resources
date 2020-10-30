@@ -6,13 +6,13 @@ const MAIL_USER = process.env.MAIL_USER
 const MAIL_PASS = process.env.MAIL_PASS
 
 //PAGES ROUTES
-router.get('/', function(req, res){
+router.get('/', (req, res) => {
     res.render("index", {title: 'Easy Finland - The repository of online resources on Finnish language and culture',
                         page: 'Easy Finland',
                         subpage: 'The repository of online resources on Finnish language and culture'});
 });
 
-router.get('/language', function(req, res){
+router.get('/language', (req, res) => {
     res.render("learning", {title: 'Language Learning',
                             page: 'Language',
                             subpage: ''});
@@ -72,7 +72,7 @@ router.post('/contact', (req, res) => {
     })
 });
 
-//ERROR CATCH ALL ROUTE
+//CATCH ALL ROUTE
 router.use((req, res, next) => {
     res.status(404).render('404', {title: 'Page Not Found',
                                     page: '404',

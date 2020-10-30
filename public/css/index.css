@@ -69,7 +69,7 @@
 }
 
 .menu_card:hover .menu_card_title {
-    width: 80%;
+    width: 65%;
 }
 
 .menu_card_text {
@@ -127,11 +127,11 @@
     }
 
     .menu_overlay {
-        opacity: .3;
+        opacity: .4;
     }
 
     .menu_card:hover .menu_overlay {
-        opacity: .3;
+        opacity: .4;
     }
 
 }

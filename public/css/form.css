@@ -112,7 +112,7 @@
 .contact_form {
     background-color: white;
     margin: 50px auto;
-    width: 60%;
+    width: 40%;
     box-shadow: 5px 5px 10px rgb(141, 128, 128);
     border-radius: 8px;
     overflow: hidden;
@@ -188,6 +188,10 @@ input:focus, textarea:focus {
         width: 27%;
         height: 100%;
         clip-path: polygon(100% -100%, 100% 100%, 0% 100%, 0% 100%);
+    }
+
+    .contact_form {
+        width: 60%;
     }
 }
 

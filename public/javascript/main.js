@@ -9,7 +9,7 @@ $(function($) {
 
 document.querySelector('.navbar-toggler').onclick = function() {
     var headerContent = document.querySelector('.header-content');
-    headerContent.style.transition = 'opacity 0.5s';
+    // headerContent.style.transition = 'opacity 0.5s';
     const { opacity } = headerContent.ownerDocument.defaultView.getComputedStyle(headerContent, null);
     if (opacity === '1') {
     headerContent.style.opacity = '0';
