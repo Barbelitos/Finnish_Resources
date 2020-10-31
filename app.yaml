@@ -1,5 +1,5 @@
 runtime: nodejs
 env: flex
 env_variables:
-  MAIL_USER: "contact@easyfinland.com",
+  MAIL_USER: "contact@easyfinland.com"
   MAIL_PASS: "arrozdecabidela"
