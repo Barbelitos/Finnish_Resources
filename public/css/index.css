@@ -79,7 +79,6 @@
     height: 230px;
     margin-top: 1rem;
     font-size: 18px;
-    /* font-weight: 400; */
 }
 
 .menu_card_content a {
@@ -100,6 +99,9 @@
     color: white;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (max-width: 900px) {
     .menu_container {
         grid-template-columns: repeat(1, 1fr);
@@ -110,6 +112,10 @@
     }
 
     .menu_card_title {
+        width: 80%;
+    }
+
+    .menu_card:hover .menu_card_title {
         width: 80%;
     }
 
