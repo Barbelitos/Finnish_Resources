@@ -1,0 +1,8 @@
+runtime: nodejs
+env: flex
+handlers:
+  - url: /.*
+    secure: always
+env_variables:
+  MAIL_USER: "contact@easyfinland.com"
+  MAIL_PASS: "arrozdecabidela"
