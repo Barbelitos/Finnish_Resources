@@ -130,3 +130,7 @@
 
 - Minor change in cards media queries.
 
+## 19.NOV.2020
+
+- Added meta descriptions to all pages
+

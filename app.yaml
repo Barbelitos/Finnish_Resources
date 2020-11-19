@@ -1,6 +1,4 @@
-runtime: nodejs
-
-env: flex
+runtime: nodejs12
 
 env_variables:
   MAIL_USER: "contact@easyfinland.com"
